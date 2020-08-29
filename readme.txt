@@ -1,1 +1,1 @@
-Archivo inicial del proyecto de bootstrap 
+README de inicio de proyecto
