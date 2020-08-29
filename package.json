@@ -1,0 +1,16 @@
+{
+  "name": "bootstrap1",
+  "version": "1.0.0",
+  "description": "Primer Proyecto nodeJS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://RobertoVillalonOlivos@bitbucket.org/RobertoVillalonOlivos/bootstrap1.git"
+  },
+  "author": "Roberto Villalon",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/RobertoVillalonOlivos/bootstrap1#readme"
+}
