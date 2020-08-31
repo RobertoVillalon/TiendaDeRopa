@@ -1,0 +1,14 @@
+.jumbotron {
+    background-color: red;
+    text-align: center;
+}
+
+footer{
+    background-color: #f5f5f5;
+    padding: 5rem;
+}
+
+.card{
+    text-align: center;
+    background-color: whitesmoke;
+}
