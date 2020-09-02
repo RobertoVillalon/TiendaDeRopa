@@ -2,13 +2,15 @@
 .jumbotron {
     background-color: red;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 0ch;
 }
 
 footer{
     background-color: #f5f5f5;
-    padding: 5rem;
-    margin-top: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    padding: 2rem;
 }
 
 .card{
