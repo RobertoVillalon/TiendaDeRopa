@@ -16,8 +16,13 @@ footer{
 .card{
     text-align: center;
     background-color: whitesmoke;
+    margin-bottom: 1rem;
 }
 
 div h6, div h1{
     text-align: center;
+}
+
+#informationOfPage{
+    padding: 5rem;
 }
