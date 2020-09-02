@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ShoppingClothes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel= "stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <script src='node_modules/jquery/dist/jquery.min.js'></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <span class="border border-primary"></span>
+    <a class="navbar-brand" href="#">ShoppingClothes</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="nosotros.html">Nosotros</a>
+        <a class="nav-link" href="comentario.html">Comentarios</a>
+        <a class="nav-link active" href="#">Precios<span class="sr-only"></span></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <h1 class="display-2"><img src="css/res/logo.png" width="180rem"> Shopping Clothes</h1>
+    <h3 class="display-6">Los Mejores Prendas de la Web</h3>
+  </div>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Pagina Principal</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Precios</li>
+    </ol>
+  </nav>
+
+  <div class="container">
+    <table class="table table-dark table-hover table-responsive-lg">
+        <thead>
+            <th scope="col">Producto</th>
+            <th scope="col">Color</th>
+            <th scope="col">Disponibilidad</th>
+            <th scope="col">Precio</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Camisa</th>
+                <td>Blanco</td>
+                <td>50</td>
+                <td>10 <span class="oi oi-dollar"></span></td>
+            </tr>
+            <tr>
+                <th scope="row">Pantalon</th>
+                <td>Azul Claro</td>
+                <td>20</td>
+                <td>15 <span class="oi oi-dollar"></span></td>
+            </tr>
+            <tr>
+                <th scope="row">Zapatos</th>
+                <td>Negros</td>
+                <td>15</td>
+                <td>45 <span class="oi oi-dollar"></span></td>
+            </tr>
+            <tr>
+                <th scope="row">Chaleco</th>
+                <td>Blanco-Negro</td>
+                <td>50</td>
+                <td>20 <span class="oi oi-dollar"></span></td>
+            </tr>
+            <tr>
+                <th scope="row">Calcetas</th>
+                <td>Blanco</td>
+                <td>100</td>
+                <td>1 <span class="oi oi-dollar"></span></td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+
+    <footer>
+    <div class="container">
+        <div class="row">
+        <div class="col align-self-start"> <h2>Redes Sociales</h2>
+            <p><a href="facebook.com">Facebook </a></p>
+            <p><a href="twitter.com">Twitter</a> </p>
+            </div>
+        <div class="col align-self-between"> <h2>Contacto</h2>
+            <p><b><span class="oi oi-home"></span> Direccion: </b><address>Avenida 1 #2354</address></p>
+            <p><b><span class="oi oi-phone"></span> Telefono: </b> <address>986543217<address></p>
+        </div>
+        <div class="col"> <h2>Historia</h2>
+            <p><b>Desde: </b><address>2015-2020</address></p>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
