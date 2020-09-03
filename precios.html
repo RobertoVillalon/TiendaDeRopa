@@ -42,47 +42,71 @@
   </nav>
 
   <div class="container">
-    <table class="table table-dark table-hover table-responsive-lg">
-        <thead>
-            <th scope="col">Producto</th>
-            <th scope="col">Color</th>
-            <th scope="col">Disponibilidad</th>
-            <th scope="col">Precio</th>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">Camisa</th>
-                <td>Blanco</td>
-                <td>50</td>
-                <td>10 <span class="oi oi-dollar"></span></td>
-            </tr>
-            <tr>
-                <th scope="row">Pantalon</th>
-                <td>Azul Claro</td>
-                <td>20</td>
-                <td>15 <span class="oi oi-dollar"></span></td>
-            </tr>
-            <tr>
-                <th scope="row">Zapatos</th>
-                <td>Negros</td>
-                <td>15</td>
-                <td>45 <span class="oi oi-dollar"></span></td>
-            </tr>
-            <tr>
-                <th scope="row">Chaleco</th>
-                <td>Blanco-Negro</td>
-                <td>50</td>
-                <td>20 <span class="oi oi-dollar"></span></td>
-            </tr>
-            <tr>
-                <th scope="row">Calcetas</th>
-                <td>Blanco</td>
-                <td>100</td>
-                <td>1 <span class="oi oi-dollar"></span></td>
-            </tr>
-        </tbody>
-    </table>
-  </div>
+    <ul class="nav nav-pills" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" role="tab" id="compara-tab" data-toggle="pill" href="#compara" 
+        aria-controls="compara" aria-selected="true" >Tabla de precios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" role="tab" id="informacion-tab"  data-toggle="pill" href="#information"
+        aria-controls="information" aria-selected="false">Informacion de la tabla</a>
+      </li>
+    </ul>
+
+      <div class="tab-content" id="ContenidoTabla">
+        <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+          <table class="table table-dark table-hover table-responsive-lg" id="tabla">
+              <thead>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Color</th>
+                  <th scope="col">Disponibilidad</th>
+                  <th scope="col">Precio</th>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th scope="row">Camisa</th>
+                      <td>Blanco</td>
+                      <td>50</td>
+                      <td>10 <span class="oi oi-dollar"></span></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Pantalon</th>
+                      <td>Azul Claro</td>
+                      <td>20</td>
+                      <td>15 <span class="oi oi-dollar"></span></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Zapatos</th>
+                      <td>Negros</td>
+                      <td>15</td>
+                      <td>45 <span class="oi oi-dollar"></span></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Chaleco</th>
+                      <td>Blanco-Negro</td>
+                      <td>50</td>
+                      <td>20 <span class="oi oi-dollar"></span></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Calcetas</th>
+                      <td>Blanco</td>
+                      <td>100</td>
+                      <td>1 <span class="oi oi-dollar"></span></td>
+                  </tr>
+              </tbody>
+          </table>
+        </div>
+
+        <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="information-tab">
+          <div class="d-flex justify-content-center">
+            <p><br>
+              Cada prenda comprendida en el listado visto, esta sujeta a cambios, esto quiere decir que la informacion vista anteriormente no tiene que se 100% fidedigna</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
   <footer>
     <div class="container">
