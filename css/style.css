@@ -17,6 +17,7 @@ footer{
     text-align: center;
     background-color: whitesmoke;
     margin-bottom: 1rem;
+    padding: none;
 }
 
 div h6, div h1{
@@ -25,4 +26,8 @@ div h6, div h1{
 
 #informationOfPage{
     padding: 5rem;
+}
+
+#sectionProducts{
+    padding-top: 1rem;
 }
