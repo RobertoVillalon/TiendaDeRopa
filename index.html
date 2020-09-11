@@ -72,6 +72,30 @@
       </div>
     </div>
 
+  <div class="container d-flex justify-content-center">  
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="css/res/Cblanca.png" alt="Primer Slide" height="300rem" width="100rem">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="css/res/CBlancos.jpg" alt="Segundo Slide" height="300rem" width="100rem">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="css/res/Gcolores.jpg" alt="Tercer Slide" height="300rem" width="100rem">
+        </div>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
     </div>
         <div class="container" id="sectionProducts">
             <div class="d-flex justify-content-center align-items-center">
@@ -146,6 +170,36 @@
               </div>
           </div>
         </div>
+        <div class="container">
+          <button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#exampleModal">Suscribete al boletin</button>
+        </div>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Suscribete al Boletin Semanal</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-row d-flex">
+                  <label for="fieldNombre">Nombre: </label>
+                  <input type="text" class="form-control" id="fieldNombre">
+                </div>
+                <div class="form-row d-flex">
+                  <label for="fieldNombre">Email: </label>
+                  <input type="email" class="form-control" id="fieldNombre">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Enviar datos</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer>
@@ -158,36 +212,6 @@
             <div class="col align-self-between"> <h2>Contacto</h2>
               <p><b><span class="oi oi-home"></span> Direccion: </b><address>Avenida 1 #2354</address></p>
               <p><b><span class="oi oi-phone"></span> Telefono: </b> <address>986543217<address></p>
-              <div class="container">
-                <button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#exampleModal">Suscribete al boletin</button>
-              </div>
-              
-              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="exampleModalLabel">Suscribete al Boletin Semanal</h4>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="form-row d-flex">
-                        <label for="fieldNombre">Nombre: </label>
-                        <input type="text" class="form-control" id="fieldNombre">
-                      </div>
-                      <div class="form-row d-flex">
-                        <label for="fieldNombre">Email: </label>
-                        <input type="email" class="form-control" id="fieldNombre">
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                      <button type="button" class="btn btn-primary">Enviar datos</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="col"> <h2>Historia</h2>
               <p><b>Desde: </b><address>2015-2020</address></p>
@@ -198,13 +222,12 @@
 
       <script>
         $(function(){
-          $('[data-toggle="tooltip"]').tooltip()
-
-        })
-
-        $(function(){
-          $('[data-toggle="popover"]').popover()
-        })
+          $('[data-toggle="tooltip"]').tooltip();
+          $('[data-toggle="popover"]').popover();
+          $('.carousel').carousel({
+            interval: 1000
+          });
+        });
       </script>
 </body>
 </html>
