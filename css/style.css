@@ -31,3 +31,11 @@ div h6, div h1{
 #sectionProducts{
     padding-top: 1rem;
 }
+
+.carousel, .carousel img {
+    width: 300px;
+    box-sizing: content-box;
+}
+.carousel img {
+    height: 300px!important;
+}

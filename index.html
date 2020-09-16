@@ -76,13 +76,13 @@
     <div id="carouselControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="css/res/Cblanca.png" alt="Primer Slide" height="300rem" width="100rem">
+          <img class="d-block w-100" src="css/res/Cblanca.png" alt="Primer Slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="css/res/CBlancos.jpg" alt="Segundo Slide" height="300rem" width="100rem">
+          <img class="d-block w-100" src="css/res/CBlancos.jpg" alt="Segundo Slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="css/res/Gcolores.jpg" alt="Tercer Slide" height="300rem" width="100rem">
+          <img class="d-block w-100" src="css/res/Gcolores.jpg" alt="Tercer Slide">
         </div>
         <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -95,6 +95,16 @@
       </div>
     </div>
   </div>
+
+  <script>
+    $(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+      $('.carousel').carousel({
+        interval: 1000
+      });
+    });
+  </script>
 
     </div>
         <div class="container" id="sectionProducts">
@@ -219,15 +229,5 @@
           </div>
         </div>
       </footer>
-
-      <script>
-        $(function(){
-          $('[data-toggle="tooltip"]').tooltip();
-          $('[data-toggle="popover"]').popover();
-          $('.carousel').carousel({
-            interval: 1000
-          });
-        });
-      </script>
 </body>
 </html>
