@@ -181,7 +181,7 @@
           </div>
         </div>
         <div class="container">
-          <button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#exampleModal">Suscribete al boletin</button>
+          <button type="button" id="btnModal" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#exampleModal">Suscribete al boletin</button>
         </div>
         
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -199,8 +199,8 @@
                   <input type="text" class="form-control" id="fieldNombre">
                 </div>
                 <div class="form-row d-flex">
-                  <label for="fieldNombre">Email: </label>
-                  <input type="email" class="form-control" id="fieldNombre">
+                  <label for="fieldEmail">Email: </label>
+                  <input type="email" class="form-control" id="fieldEmail">
                 </div>
               </div>
               <div class="modal-footer">
@@ -211,6 +211,32 @@
           </div>
         </div>
       </div>
+
+      <script>
+        $(function(){
+          $('#exampleModal').on('shown.bs.modal',function(e){
+            console.log("El modal se esta mostrando");
+          });
+
+          $('#exampleModal').on('show.bs.modal',function(e){
+            console.log("El modal se mostro");
+            $('#btnModal').removeClass('btn-outline-info');
+            $('#btnModal').addClass('btn-info');
+            $('#btnModal').prop('disabled',true);
+          });
+
+          $('#exampleModal').on('hidden.bs.modal',function(e){
+            console.log("El modal se esta ocultando");
+          });
+
+          $('#exampleModal').on('hide.bs.modal',function(e){
+            console.log("El modal se oculto");
+            $('#btnModal').addClass('btn-outline-info');
+            $('#btnModal').removeClass('btn-info');
+            $('#btnModal').prop('disabled',false);
+          });
+        });
+      </script>
 
       <footer>
         <div class="container">
