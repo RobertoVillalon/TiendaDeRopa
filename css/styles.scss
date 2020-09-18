@@ -1,9 +1,14 @@
+$red: #e00404;
+
+@mixin margenesJumboTron($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+} 
 
 .jumbotron {
-    background-color: red;
+    background-color: $red;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 0ch;
+    @include margenesJumboTron(10px, 50px);
 }
 
 footer{

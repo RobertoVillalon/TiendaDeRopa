@@ -3,14 +3,16 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>ShoppingClothes</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='node_modules/bootstrap/dist/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel= "stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <script src='node_modules/jquery/dist/jquery.min.js'></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="config.js"></script>
+
+    <title>ShoppingClothes</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -97,13 +99,7 @@
   </div>
 
   <script>
-    $(function(){
-      $('[data-toggle="tooltip"]').tooltip();
-      $('[data-toggle="popover"]').popover();
-      $('.carousel').carousel({
-        interval: 1000
-      });
-    });
+    FuncionalidadCarrusel();
   </script>
 
     </div>
@@ -213,29 +209,7 @@
       </div>
 
       <script>
-        $(function(){
-          $('#exampleModal').on('shown.bs.modal',function(e){
-            console.log("El modal se esta mostrando");
-          });
-
-          $('#exampleModal').on('show.bs.modal',function(e){
-            console.log("El modal se mostro");
-            $('#btnModal').removeClass('btn-outline-info');
-            $('#btnModal').addClass('btn-info');
-            $('#btnModal').prop('disabled',true);
-          });
-
-          $('#exampleModal').on('hidden.bs.modal',function(e){
-            console.log("El modal se esta ocultando");
-          });
-
-          $('#exampleModal').on('hide.bs.modal',function(e){
-            console.log("El modal se oculto");
-            $('#btnModal').addClass('btn-outline-info');
-            $('#btnModal').removeClass('btn-info');
-            $('#btnModal').prop('disabled',false);
-          });
-        });
+        FuncionalidadModal();
       </script>
 
       <footer>
