@@ -7,7 +7,7 @@ $yellow: #d1e004;
 } 
 
 .jumbotron {
-    background-color: $red;
+    background-color: $yellow;
     text-align: center;
     @include margenesJumboTron(10px, 50px);
 }
