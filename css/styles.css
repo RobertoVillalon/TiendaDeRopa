@@ -2,32 +2,42 @@
   background-color: #e00404;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 footer {
   background-color: #f5f5f5;
   margin-top: 10rem;
   margin-bottom: 0;
-  padding: 2rem; }
+  padding: 2rem;
+}
 
 .card {
   text-align: center;
   background-color: whitesmoke;
   margin-bottom: 1rem;
-  padding: none; }
+  padding: none;
+}
 
 div h6, div h1 {
-  text-align: center; }
+  text-align: center;
+}
 
 #informationOfPage {
-  padding: 5rem; }
+  padding: 5rem;
+}
 
 #sectionProducts {
-  padding-top: 1rem; }
+  padding-top: 1rem;
+}
 
 .carousel, .carousel img {
   width: 300px;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+}
 
 .carousel img {
-  height: 300px !important; }
+  height: 300px !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
